@@ -2,6 +2,10 @@
     "columns" : 
         [
             {
+                "name" : "PersonID",
+                "type" : "uuid"
+            },
+            {
                 "name" : "FirstName",
                 "type" : "first_name",
                 "transposition_chars": 1

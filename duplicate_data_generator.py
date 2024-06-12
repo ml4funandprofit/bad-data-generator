@@ -188,6 +188,8 @@ def get_fake_string(fake_type, fake_gen, fill_rate, str_format):
         return fake_gen.date_of_birth(minimum_age=18, maximum_age=95).strftime('%m/%d/%Y')
     elif fake_type == 'formatted_string':
         return fake_gen.pystr_format(str_format)
+    elif fake_type == 'uuid':
+        return uuid.uuid4()
 
 
 def transposition_chars(str_to_alter):
